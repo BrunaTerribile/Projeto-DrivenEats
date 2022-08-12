@@ -1,0 +1,179 @@
+body {
+    background-color: #E5E5E5;
+    display: block;
+    font-family: 'Roboto';
+}
+
+.barra_superior {
+    background-color: #CF2B2B;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    width: 100%;
+    height: 92px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    box-shadow: 10px 0 10px grey;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 44px;
+    color: white;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+}
+
+.corpo_pagina {
+    margin-top: 92px;
+    margin-bottom: 92px;
+    padding-left: 19px;
+    padding-top: 30px;
+    width: 100%;
+    height: auto;
+    background-color: pink;
+}
+
+.titulo_secao {
+    margin-bottom: 17px;
+    background-color: white;
+}
+
+h3 {
+    font-family: 'Righteous';
+    font-size: 26px;
+    color: #333333;
+}
+
+.secao_pratos, .secao_bebidas, .secao_sobremesa {
+    background-color: burlywood;
+    margin-bottom: 27px;
+}
+
+.opçoes {
+    background-color: aqua;
+    display: flex;
+    overflow: scroll;
+}
+
+.prato1, .prato2, .prato3, .prato4 {
+    background-color: orange;
+    width: 172px;
+    height: 216px;
+    border-radius: 9px;
+    box-shadow: 0 0 5px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    margin-right: 16px;
+    padding-top: 18px;
+    padding-right: 14px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    box-sizing: border-box;
+}
+
+.bebida1, .bebida2, .bebida3, .bebida4 {
+    background-color: lightgreen;
+    width: 172px;
+    height: 202px;
+    border-radius: 9px;
+    box-shadow: 0 0 5px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    margin-right: 16px;
+    padding-top: 18px;
+    padding-right: 14px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    box-sizing: border-box;
+}
+
+.sobremesa1, .sobremesa2, .sobremesa3, .sobremesa4 {
+    background-color: lightgreen;
+    width: 172px;
+    height: 197px;
+    border-radius: 9px;
+    box-shadow: 0 0 5px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    margin-right: 16px;
+    padding-top: 18px;
+    padding-right: 14px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    box-sizing: border-box;
+}
+
+
+.imagem {
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+}
+
+.nome_prato, .nome_bebida, .nome_sobremesa {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.descricao {
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    color: #A6A6A6;
+}
+
+.valor {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.secao_bebidas {
+    background-color: burlywood;
+}
+
+.secao_sobremesa {
+    background-color: burlywood;
+}
+
+.barra_inferior {
+    background-color:  white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 92px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.botao_pedido {
+    background-color: #CBCBCB;
+    height: 61px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+/* colocar no body do css
+font-family: 'Righteous', cursive;
+*/
