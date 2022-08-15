@@ -89,6 +89,6 @@ function finalizarPedido() {
     } 
 }
 
-function mensagem() {
-    
-}
+/* function mensagem() {
+    https://wa.me/5535999438824
+}*/
