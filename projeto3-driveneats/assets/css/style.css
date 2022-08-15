@@ -178,6 +178,9 @@ h3 {
 
 .showResumo {
     display: inline;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
 }
 
 .confirmar {
@@ -232,16 +235,26 @@ h4 {
     width: 364px;
     border-radius: 50px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-p {
+.texto {
     font-family: 'Roboto';
     font-size: 18px;
+    font-weight: 400;
     line-height: 21px;
     color: white;
+    text-align: center;
 }
 
 .ativo {
     background-color: green;
     color: white;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    color: white;
+    text-align: center;
 }

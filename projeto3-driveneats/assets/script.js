@@ -66,6 +66,7 @@ function confirmarPedido() {
     const prato = document.querySelector('.opçoesPratos .selecionado');
     const bebida = document.querySelector('.opçoesBebidas .selecionado');
     const sobremesa = document.querySelector('.opçoesSobremesas .selecionado');
+    
     const finalizar = document.querySelector('.barra_inferior .botao_pedido')
 
 
@@ -75,7 +76,7 @@ function confirmarPedido() {
     } 
 }
 
-function finalizarPedido() {
+/* function finalizarPedido() {    
     const prato = document.querySelector('.opçoesPratos .selecionado');
     const bebida = document.querySelector('.opçoesBebidas .selecionado');
     const sobremesa = document.querySelector('.opçoesSobremesas .selecionado');
@@ -84,11 +85,43 @@ function finalizarPedido() {
     const opaco = document.querySelector('.fundo');
 
     if (prato && bebida && sobremesa !== null) { 
-        telaConfirma.classList.add('showResumo');
-        opaco.classList.add('opaco');    
+        telaConfirma.classList.toggle('showResumo');
+        opaco.classList.toggle('opaco');    
     } 
 }
 
-/* function mensagem() {
-    https://wa.me/5535999438824
-}*/
+function resumo() {
+    const pratoEsc = document.querySelector('.opçoesPratos .selecionado .nome_prato');
+    const bebidaEsc= document.querySelector('.opçoesBebidas .selecionado .nome_bebida');
+    const sobremesaEsc = document.querySelector('.opçoesSobremesas .selecionado .nome_sobremesa');
+    
+    const inserirPrato = document.querySelector('.resumoPedido .resumo .pratoEsc');
+    const inserirBebida = document.querySelector('.resumoPedido .resumo .bebidaEsc');
+    const inserirSobremesa = document.querySelector('.resumoPedido .resumo .sobremesaEsc');
+
+    inserirPrato.innerHTML = "PRATO";
+    inserirBebida.innerHTML = "BEBIDA";
+    inserirSobremesa.innerHTML = "SOBREMESA";
+} */
+
+function mensagem(){
+    const pratoEscolhido = document.querySelector('.opçoesPratos .selecionado .nome_prato');
+    const bebidaEscolhida = document.querySelector('.opçoesBebidas .selecionado .nome_bebida');
+    const sobremesaEscolhida = document.querySelector('.opçoesSobremesas .selecionado .nome_sobremesa');
+    
+    const valorPrato = document.querySelector('.opçoesPratos .selecionado .valor');
+    const valorBebida = document.querySelector('.opçoesBebidas .selecionado .valor');
+    const valorSobremesa = document.querySelector('.opçoesSobremesas .selecionado .valor');
+
+    const valorTotal = Number((valorPrato.textContent.replace(/\D/g, '')/100).toFixed(2)) + Number((valorBebida.textContent.replace(/\D/g, '')/100).toFixed(2)) + Number((valorSobremesa.textContent.replace(/\D/g, '')/100).toFixed(2));
+
+    const link = "https://wa.me/5535999438824?text=";
+    const msg = encodeURIComponent(`Olá, gostaria de fazer o pedido:
+    - Prato: ${pratoEscolhido.textContent}
+    - Bebida: ${bebidaEscolhida.textContent}
+    - Sobremesa: ${sobremesaEscolhida.textContent}
+Total: R$ ${valorTotal.toFixed(2)}`);
+
+    const url_pedido = (link + msg);
+    window.open(url_pedido);
+}

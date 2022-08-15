@@ -38,7 +38,7 @@
                     <img src="./img/frango_yin_yang.png" class="imagem"/>
                     <div class="nome_prato"> Frango Yin Yang </div>
                     <div class="descricao"> Um pouco de batata, um pouco de salada </div>
-                    <div class="valor"> R$ 20,90 </div>
+                    <span class="valor"> R$ 20.90 </span>
                     <ion-icon name="checkmark-circle" class="icone"></ion-icon>
 
                 </div>
@@ -46,7 +46,7 @@
                     <img src="./img/bifegrelhado.png" class="imagem"/>
                     <div class="nome_prato"> Bife grelhado </div>
                     <div class="descricao"> Bife, batata frita, arroz e salada </div>
-                    <div class="valor"> R$ 25,90 </div>
+                    <div class="valor"> R$ 25.90 </div>
                     <ion-icon name="checkmark-circle" class="icone"></ion-icon>
 
                 </div>
@@ -54,7 +54,7 @@
                     <img src="./img/peixeempanado.png" class="imagem"/>
                     <div class="nome_prato"> Peixe empanado </div>
                     <div class="descricao"> Filé de tilápia empanado e legumes  </div>
-                    <div class="valor"> R$ 20,90 </div>
+                    <div class="valor"> R$ 20.90 </div>
                     <ion-icon name="checkmark-circle" class="icone"></ion-icon>
 
                 </div>
@@ -62,7 +62,7 @@
                     <img src="./img/espaguete_bolonhesa.png" class="imagem"/>
                     <div class="nome_prato"> Macarrão do chef </div>
                     <div class="descricao"> Espaguete à bolonhesa </div>
-                    <div class="valor"> R$ 18,90 </div>
+                    <div class="valor"> R$ 18.90 </div>
                     <ion-icon name="checkmark-circle" class="icone"></ion-icon>
 
                 </div>
@@ -75,7 +75,7 @@
                     <img src="./img/coquinha_gelada.png" class="imagem"/>
                     <div class="nome_bebida"> Coquinha gelada </div>
                     <div class="descricao"> Lata 350ml </div>
-                    <div class="valor"> R$ 4,90 </div>
+                    <div class="valor"> R$ 4.90 </div>
                     <ion-icon name="checkmark-circle" class="icone"></ion-icon>
 
                 </div>
@@ -83,7 +83,7 @@
                     <img src="./img/coquinha_gelada.png" class="imagem"/>
                     <div class="nome_bebida"> Guaraná gelado </div>
                     <div class="descricao"> Lata 350ml</div>
-                    <div class="valor"> R$ 4,50 </div>
+                    <div class="valor"> R$ 4.50 </div>
                     <ion-icon name="checkmark-circle" class="icone"></ion-icon>
 
                 </div>
@@ -91,7 +91,7 @@
                     <img src="./img/sprite.png" class="imagem"/>
                     <div class="nome_bebida"> Sprite gelada </div>
                     <div class="descricao"> Lata 350ml </div>
-                    <div class="valor"> R$ 4,00 </div>
+                    <div class="valor"> R$ 4.00 </div>
                     <ion-icon name="checkmark-circle" class="icone"></ion-icon>
 
                 </div>
@@ -99,7 +99,7 @@
                     <img src="./img/suco.png" class="imagem"/>
                     <div class="nome_bebida"> Suquinho de uva </div>
                     <div class="descricao"> Lata 350ml </div>
-                    <div class="valor"> R$ 5,00 </div>
+                    <div class="valor"> R$ 5.00 </div>
                     <ion-icon name="checkmark-circle" class="icone"></ion-icon>
 
                 </div>
@@ -112,7 +112,7 @@
                     <img src="./img/pudim.png" class="imagem"/>
                     <div class="nome_sobremesa"> Pudim</div>
                     <div class="descricao"> Pudim tradicional</div>
-                    <div class="valor"> R$ 7,90 </div>
+                    <div class="valor"> R$ 7.90 </div>
                     <ion-icon name="checkmark-circle" class="icone"></ion-icon>
 
                 </div>
@@ -120,7 +120,7 @@
                     <img src="./img/brownie.png" class="imagem"/>
                     <div class="nome_sobremesa"> Brownie </div>
                     <div class="descricao"> Acompanha sorvete</div>
-                    <div class="valor"> R$ 9,90 </div>
+                    <div class="valor"> R$ 9.90 </div>
                     <ion-icon name="checkmark-circle" class="icone"></ion-icon>
 
                 </div>
@@ -128,7 +128,7 @@
                     <img src="./img/milkshake.png" class="imagem"/>
                     <div class="nome_sobremesa"> Milkshake </div>
                     <div class="descricao"> Copo 400ml </div>
-                    <div class="valor"> R$ 11,90 </div>
+                    <div class="valor"> R$ 11.90 </div>
                     <ion-icon name="checkmark-circle" class="icone"></ion-icon>
 
                 </div>
@@ -136,7 +136,7 @@
                     <img src="./img/tortaholandesa.png" class="imagem"/>
                     <div class="nome_sobremesa"> Torta Holandesa </div>
                     <div class="descricao"> Torta tradicional </div>
-                    <div class="valor"> R$ 8,50 </div>
+                    <div class="valor"> R$ 8.50 </div>
                     <ion-icon name="checkmark-circle" class="icone"></ion-icon>
 
                 </div>
@@ -147,18 +147,26 @@
 
     <div class="resumoPedido">
         <div> <h4>Confirme seu pedido </h4> </div>
-        <div class="resumo"> aaaaaaaaaaa </div>
-        <div onclick="mensagem()" class="confirmar"> Tudo certo, pode pedir! 
-           <!-- <a target="_blank" href="https://wa.me/5535999438824"> </a> !-->
+        <div class="resumo">
+            <div class="pratoEsc"> AAAAAAAAAA </div>
+        </BR>
+            <div class="bebidaEsc"> AAAAAAAAAA </div>
+        </BR>
+            <div class="sobremesaEsc"> AAAAAAAAAAAAAA </div>
+        </BR>
+            <div class="total"> </div>
         </div>
-        <div class="cancelar"> Cancelar </div>
+        <div onclick="mensagem()" class="confirmar">
+           Tudo certo, pode pedir!
+        </div>
+        <div onclick="finalizarPedido()" class="cancelar"> <div class="texto"> Cancelar </div> </div>
     </div>
 
     <div class="fundo"></div>
 
 
     <div class="barra_inferior"> 
-        <buttom onclick="finalizarPedido()" class="botao_pedido"> <p> Selecione os 3 itens para fechar o pedido </p> </buttom>
+        <div onclick="mensagem()" class="botao_pedido"> <div class="texto"> Selecione os 3 itens para fechar o pedido </div> </div>
     </div>
 
     <script src="script.js"> </script>
