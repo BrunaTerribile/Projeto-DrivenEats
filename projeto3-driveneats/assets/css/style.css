@@ -33,17 +33,16 @@ h2 {
 
 .corpo_pagina {
     margin-top: 92px;
-    margin-bottom: 92px;
+    margin-bottom: 106px;
     padding-left: 19px;
     padding-top: 30px;
     width: 100%;
     height: auto;
-    background-color: pink;
+    background-color: #E5E5E5;
 }
 
 .titulo_secao {
     margin-bottom: 17px;
-    background-color: white;
 }
 
 h3 {
@@ -53,18 +52,16 @@ h3 {
 }
 
 .secao_pratos, .secao_bebidas, .secao_sobremesa {
-    background-color: burlywood;
     margin-bottom: 27px;
 }
 
-.opçoes {
-    background-color: aqua;
+.opçoesPratos, .opçoesBebidas, .opçoesSobremesas {
     display: flex;
-    overflow: scroll;
+    overflow-x: scroll;
 }
 
 .prato1, .prato2, .prato3, .prato4 {
-    background-color: orange;
+    background-color: white;
     width: 172px;
     height: 216px;
     border-radius: 9px;
@@ -79,10 +76,11 @@ h3 {
     padding-bottom: 14px;
     padding-left: 14px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .bebida1, .bebida2, .bebida3, .bebida4 {
-    background-color: lightgreen;
+    background-color: white;
     width: 172px;
     height: 202px;
     border-radius: 9px;
@@ -97,10 +95,11 @@ h3 {
     padding-bottom: 14px;
     padding-left: 14px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .sobremesa1, .sobremesa2, .sobremesa3, .sobremesa4 {
-    background-color: lightgreen;
+    background-color: white;
     width: 172px;
     height: 197px;
     border-radius: 9px;
@@ -115,8 +114,8 @@ h3 {
     padding-bottom: 14px;
     padding-left: 14px;
     box-sizing: border-box;
+    position: relative;
 }
-
 
 .imagem {
     width: 144px;
@@ -146,12 +145,72 @@ h3 {
     color: #000000;
 }
 
-.secao_bebidas {
-    background-color: burlywood;
+.selecionado {
+    box-shadow: 0 0 0 5px inset green;
 }
 
-.secao_sobremesa {
-    background-color: burlywood;
+.icone {
+    display: none;
+}
+
+.aparecer_icone {
+    display: inline;
+    position: absolute;
+    bottom: 12px;
+    right: 10px;
+    font-size: 20px;
+    color: green;
+    z-index: 1;
+}
+
+.resumoPedido {
+    display: none;
+    width: 377px;
+    height: 353px;
+    position: fixed;
+    top: calc(50% - 188px);
+    left: calc(50% - 176px);
+    z-index: 4;
+    background-color: #50D074;
+    box-shadow: 0 0 5px grey;
+    border-radius: 9px;
+}
+
+.showResumo {
+    display: inline;
+}
+
+.confirmar {
+    background-color: white;
+    height: 52px;
+    border-radius: 50px;
+}
+
+.cancelar {
+    background-color: red;
+    height: 52px;
+    border-radius: 50px;
+}
+
+.fundo{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.opaco {
+    display: inline;
+}
+
+h4 {
+    font-family: 'Roboto';
+    font-size: 22px;
+    color: white;
 }
 
 .barra_inferior {
@@ -164,16 +223,25 @@ h3 {
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .botao_pedido {
     background-color: #CBCBCB;
     height: 61px;
+    width: 364px;
     border-radius: 50px;
-    text-align: center;
+    display: flex;
 }
 
-/* colocar no body do css
-font-family: 'Righteous', cursive;
-*/
+p {
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+}
+
+.ativo {
+    background-color: green;
+    color: white;
+}
